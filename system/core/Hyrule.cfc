@@ -100,8 +100,8 @@ component accessors="true" {
 			if(!rulePassed){
 				//make sure the constraint is set as an attribute on the property
 				//(validation messaging assumes all constraints exist there				
-				var propertyToPass = duplicate(properties[validationRule.getPropertyName()]);
 				properties[validationRule.getPropertyName()][validationRule.getConstraintName()] = validationRule.getConstraintValue();
+				var propertyToPass = duplicate(properties[validationRule.getPropertyName()]);
 				
 				var args ={class=propertyToPass.className
 				           ,level='property'
